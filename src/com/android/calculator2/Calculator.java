@@ -313,7 +313,7 @@ public class Calculator extends Activity
                         getResources().getColor(R.color.display_result_text_color));
                 if (android.os.Build.VERSION.SDK_INT >= 21) {
                     getWindow().setStatusBarColor(
-                            getResources().getColor(R.color.calculator_accent_color));
+                            getResources().getColor(R.color.calculator_primary_color));
                 }
             }
         }
@@ -565,7 +565,7 @@ public class Calculator extends Activity
         }
         final View sourceView = mClearButton.getVisibility() == View.VISIBLE
                 ? mClearButton : mDeleteButton;
-        reveal(sourceView, R.color.calculator_accent_color, new AnimatorListenerAdapter() {
+        reveal(sourceView, R.color.calculator_primary_color, new AnimatorListenerAdapter() {
             @Override
             public void onAnimationStart(Animator animation) {
                 mFormulaEditText.clear();

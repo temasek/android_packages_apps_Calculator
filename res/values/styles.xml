@@ -18,7 +18,8 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/calculator_accent_color</item>
+        <item name="colorPrimary">@color/calculator_primary_color</item>
+        <item name="android:statusBarColor">@color/calculator_primary_color</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
