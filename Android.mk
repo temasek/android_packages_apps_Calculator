@@ -34,6 +34,8 @@ LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages com.xlythe.floatingview2
 
+LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
+
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include $(BUILD_PACKAGE)
